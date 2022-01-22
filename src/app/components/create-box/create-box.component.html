@@ -1,7 +1,10 @@
 <app-header></app-header>
 <ng-container>
     <section *ngIf="!showSuccessMessage else successMessage">
-        <div>
+        <div class="col-md-8 offset-md-2">
+            <div>
+                <h5>Create Box</h5>
+            </div>
             <div class="row">
                 <h6 class="col-2">
                     Name:
@@ -28,8 +31,5 @@
             </div>
         </div>
     </section>
-    <ng-template #successMessage>
-        Box created successfully
-    </ng-template>
 </ng-container>
 <app-footer></app-footer>

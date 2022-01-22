@@ -39,7 +39,7 @@ export class AddProductComponent implements OnDestroy{
           window.alert('Product created successfully')
           this.router.navigateByUrl('/')
         }
-      });
+      }, error => {window.alert(error.error.message)});
     }
   }
 
