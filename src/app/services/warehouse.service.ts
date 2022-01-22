@@ -45,7 +45,7 @@ export class WarehouseService {
 
   addProduct(product: Product): Observable<any> {
     this.httpOptions['params'] = new HttpParams();
-     return this.httpClient.put<any>(this._url+'product/createProduct', product, this.httpOptions);
+     return this.httpClient.put<any>(this._url+'product/addProduct', product, this.httpOptions);
   }
 
   retrieveBoxDetails(): Observable<string[]> {
