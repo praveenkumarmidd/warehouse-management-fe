@@ -1,0 +1,38 @@
+<app-header></app-header>
+<ng-container>
+    <section *ngIf="!showSuccessMessage else successMessage">
+        <div>
+            <div class="row">
+                <h6 class="col-2">
+                    Name:
+                </h6>
+                <div class="col-2">
+                    <input type="text" (change)="onChange($event, 'productName')" required />
+                </div>
+            </div>
+            <div class="row mt-2">
+                <h6 class="col-2">
+                    Box:
+                </h6>
+                <div class="col-2">
+                    <select (change)="onChange($event, 'boxName')" required>
+                        <option [value]="null" [disabled]="true" >Select Available Box</option>
+                        <option [value]="box" *ngFor="let box of boxList">{{box}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-1">
+                    <a routerLink="/"><button class="btn btn-danger">Cancel</button></a>
+                </div>
+                <div class="col-1">
+                    <button type="submit" class="btn btn-success" (click)="saveProductDetails()">Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <ng-template #successMessage>
+        Product added successfully
+    </ng-template>
+</ng-container>
+<app-footer></app-footer>

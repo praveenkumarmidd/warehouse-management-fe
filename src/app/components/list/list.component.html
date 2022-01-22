@@ -1,0 +1,18 @@
+<app-header></app-header>
+<section class="d-flex align-items-center justify-content-center" *ngIf="!!productsWithLocationList.length">
+    <table class="table table-striped">
+        <tr>
+            <th>Product Name</th>
+            <th>Location</th>
+        </tr>
+        <tr *ngFor="let productWithLocationList of productsWithLocationList">
+            <td>{{productWithLocationList.productName}}</td>
+            <td>
+                <div *ngFor="let location of productWithLocationList.locationList">
+                    {{location}}
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+<app-footer></app-footer>
