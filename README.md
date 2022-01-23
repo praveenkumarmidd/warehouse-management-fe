@@ -1,27 +1,37 @@
 # WarehouseManagement
+Warehouse management is a backend application to create, store, and search products with product location(box).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+Angular cli version 8.3.19
+------------------------------------------------------------------------------------------------
 
-## Development server
+# Git Repository URL:
+------------------
+https://github.com/praveenkumarmidd/warehouse-management-fe.git
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Steps to run (Git):
+1. npm install
+2. npm build --prod or ng build --prod
+3. npm start or ng serve
 
-## Code scaffolding
+Application URL:
+http://localhost:4200/
+------------------------------------------------------------------------------------------------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Docker Hub Repository:
+----------------------
+docker image - praveenkumarmiddi/warehouse-management-frontend:v1
 
-## Build
+Step to run (docker image)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+To Run only Front End Warehouse management:
+1. docker pull praveenkumarmiddi/warehouse-management-frontend:v1
 
-## Running unit tests
+2. docker run -p 80:80 praveenkumarmiddi/warehouse-management-frontend:v1
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To Run both Front end and Back warehouse:
+Execute the command in the "docker-compose -f docker-compose.yml up" (project root directory)
 
-## Running end-to-end tests
+Application URL:
+http://localhost:80
+------------------------------------------------------------------------------------------------
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
