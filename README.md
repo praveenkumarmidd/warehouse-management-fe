@@ -35,7 +35,7 @@ Application URL:
 http://localhost:80
 ------------------------------------------------------------------------------------------------
 
-#Application Functionality 
+# Application Functionality 
 
 Create Box:
     Click on the create box link to create the box with capacity
