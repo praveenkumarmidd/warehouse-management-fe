@@ -35,3 +35,17 @@ Application URL:
 http://localhost:80
 ------------------------------------------------------------------------------------------------
 
+#Application Functionality 
+
+Create Box:
+    Click on the create box link to create the box with capacity
+
+Add Products:
+    Click on the add products link to add the products to the mentioned box.
+
+Search Products:
+    Click on the search products link to search the add products with location(box)
+
+
+
+
