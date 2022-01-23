@@ -1,4 +1,4 @@
-# WarehouseManagement
+# Warehouse-Management
 Warehouse management is a Frontend application to create, store, and search products with product location(box).
 
 Angular cli version 8.3.19
