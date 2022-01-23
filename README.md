@@ -28,7 +28,7 @@ To Run only Front End Warehouse management:
 
 2. docker run -p 80:80 praveenkumarmiddi/warehouse-management-frontend:v1
 
-To Run both Front end and Back warehouse:
+To Run both Front end and Back end warehouse:
 Execute the command in the "docker-compose -f docker-compose.yml up" (project root directory)
 
 Application URL:
